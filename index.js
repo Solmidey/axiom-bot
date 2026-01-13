@@ -161,6 +161,7 @@ client.on(Events.InteractionCreate, async (interaction) => {
   }
 });
 
+console.log("DISCORD_TOKEN length:", process.env.DISCORD_TOKEN?.length);
 client.login(TOKEN);
 
 client.on("error", (error) => {
